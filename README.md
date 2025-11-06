@@ -1,6 +1,6 @@
-# 📝 Django ToDo List Project
+# Django ToDo List Project
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 mysite/
@@ -21,13 +21,13 @@ mysite/
 └── requirements.txt    # Python dependencies
 ```
 
-## 🚀 Features
+## Features
 - User registration, login, and profile management
 - Avatar upload and profile editing
 - Task dashboard: add, edit, delete, and view tasks
 - Responsive UI with custom CSS
 
-## 🖼️ Screenshots
+## Screenshots
 Screenshots of the application are available in the `screenshots/` folder:
 
 | Landing Page | Task Dashboard | Task Management |
@@ -38,7 +38,7 @@ Screenshots of the application are available in the `screenshots/` folder:
 |:--------------:|:----------------:|:----------:|:------------:|
 | ![Profile Editor](screenshots/04-profile-editor.png) | ![Registration](screenshots/05-user-registration.png) | ![Login](screenshots/06-user-login.png) | ![Profile](screenshots/07-user-profile.png) |
 
-## ⚙️ Quick Start
+## Quick Start
 1. **Clone the repository:**
    ```sh
    git clone <your-repo-url>
@@ -59,7 +59,7 @@ Screenshots of the application are available in the `screenshots/` folder:
 5. **Open in browser:**
    Visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
-## 🙌 Contributing
+## Contributing
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
 ## 📄 License
