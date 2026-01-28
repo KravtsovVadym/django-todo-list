@@ -1,33 +1,19 @@
-# Django ToDo List Project
+## Django ToDo List / (authentication, CRUD, profile management, media handling)
 
-## Project Structure
+### This is a Django ToDo application created to consolidate practical experience in working with user authentication, CRUD operations through the UI, profile management, and media file uploads
 
-```
-mysite/
-├── accounts/           # User accounts app (registration, login, profile)
-│   ├── static/         # App-specific static files (CSS)
-│   ├── templates/      # App-specific templates
-│   └── migrations/     # Django migrations
-├── todolist/           # ToDo list app (tasks, dashboard)
-│   ├── static/         # App-specific static files (CSS, JS)
-│   ├── templates/      # App-specific templates
-│   └── migrations/     # Django migrations
-├── media/              # Uploaded media files (avatars)
-├── static/             # Project-wide static files (CSS, images)
-├── templates/          # Project-wide templates
-├── screenshots/        # Project screenshots (see below)
-├── db.sqlite3          # SQLite database (ignored by git)
-├── manage.py           # Django management script
-└── requirements.txt    # Python dependencies
-```
+### In this project, the following were implemented:
+- User authentication system: registration, login, logout
+- User Profile model with avatar upload functionality
+- Task model with CRUD operations: (create, read, update, delete)
+- Two Django apps: accounts (user management) and todolist (task management)
+- Views based on: CBV - (Class-Based Views)
+- Templates for displaying: task dashboard, profile editor, authentication pages
+- Media file handling for user avatars
+- Custom CSS styling for responsive UI
+- Static files configuration
 
-## Features
-- User registration, login, and profile management
-- Avatar upload and profile editing
-- Task dashboard: add, edit, delete, and view tasks
-- Responsive UI with custom CSS
-
-## Screenshots
+### Screenshots
 Screenshots of the application are available in the `screenshots/` folder:
 
 | Landing Page | Task Dashboard | Task Management |
@@ -38,29 +24,34 @@ Screenshots of the application are available in the `screenshots/` folder:
 |:--------------:|:----------------:|:----------:|:------------:|
 | ![Profile Editor](screenshots/04-profile-editor.png) | ![Registration](screenshots/05-user-registration.png) | ![Login](screenshots/06-user-login.png) | ![Profile](screenshots/07-user-profile.png) |
 
-## Quick Start
+### Start-up instructions
+
 1. **Clone the repository:**
-   ```sh
-   git clone <your-repo-url>
-   cd mysite
-   ```
-2. **Install dependencies:**
-   ```sh
-   pip install -r requirements.txt
-   ```
-3. **Apply migrations:**
-   ```sh
+    ```bash
+    git clone <repo-url>
+    ```
+    ```bash
+    cd mysite
+    ```
+    ```bash
+    python -m venv .venv
+    ```
+    ```bash
+    source .venv/bin/activate # On Windows: .venv\Scripts\activate
+    ```
+    ```bash
+    pip install -r requirements.txt
+    ```
+2. **Apply migrations:**
+   ```bash
    python manage.py migrate
    ```
+3. **Create Superuser(Admin)**
+   ```bash
+   python manage.py createsuperuser
+   ```
 4. **Run the development server:**
-   ```sh
+   ```bash
    python manage.py runserver
    ```
-5. **Open in browser:**
-   Visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
-
-## Contributing
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
-## 📄 License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+5. **Open in browser: Visit http://127.0.0.1:8000**
