@@ -28,7 +28,7 @@ Screenshots of the application are available in the `screenshots/` folder:
 
 1. **Clone the repository:**
     ```bash
-    git clone <repo-url>
+    git clone https://github.com/KravtsovVadym/django-todo-list
     ```
     ```bash
     cd mysite
